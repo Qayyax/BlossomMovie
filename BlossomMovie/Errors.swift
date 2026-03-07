@@ -27,6 +27,7 @@ enum APIConfigError: Error, LocalizedError {
 enum NetworkError: Error, LocalizedError {
     case badURLResponse(underlyingError: Error)
     case missingConfig
+    case urlBuldFailed
     
     var errorDescription: String? {
         switch self {
@@ -34,6 +35,8 @@ enum NetworkError: Error, LocalizedError {
             return "The URL session returned an invalid response with error: \(error.localizedDescription)"
         case .missingConfig:
             return "The API configuration is missing."
+        case .urlBuldFailed:
+            return "Failed to build the URL."
         }
     }
 }
