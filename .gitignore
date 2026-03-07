@@ -9,6 +9,8 @@
 ## User settings
 xcuserdata/
 
+APIConfig.json
+
 ._*
 
 ## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
@@ -88,3 +90,4 @@ fastlane/test_output
 iOSInjectionProject/
 
 # End of https://www.toptal.com/developers/gitignore/api/swift
+BlossomMovie/APIConfig.json
